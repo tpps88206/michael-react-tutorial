@@ -1,12 +1,23 @@
-// 1. 新增一個繼承 React.Component 的子類別
+/** TodoApp.js */
+
+// 1. 使用元件類別前，記得先從 window.App 中取出
+const {
+    InputField,
+    TodoHeader,
+    TodoList
+} = window.App;
+
 class TodoApp extends React.Component {
-    // 2. 必須實作 render 方法：
-    //    透過該方法回傳的元素，讓 React 瞭解要如何繪製該元件在頁面上
     render() {
-        return (<div>TodoApp</div>);
+        // 2. 組合元件的觀念，與架構 HTML 元素是一樣的
+        return (
+            <div>
+                <TodoHeader />
+                <InputField />
+                <TodoList />
+            </div>
+        );
     }
 }
 
-// 3. 將元件類別 (TodoApp) 定義在 window.App 下：
-//    這可以讓其他 JS 檔使用該元件類別
 window.App.TodoApp = TodoApp;
