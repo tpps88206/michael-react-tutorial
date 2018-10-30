@@ -1,9 +1,13 @@
 class TodoItem extends React.Component {
     render() {
+        const {
+            title,
+            completed
+        } = this.props;
         return (
             <div>
-                <input type="checkbox" />
-                <span>Item 1</span>
+                <input type="checkbox" checked={completed} />
+                <span>{title}</span>
                 <button>x</button>
             </div>
         );

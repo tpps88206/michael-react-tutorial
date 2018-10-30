@@ -1,6 +1,3 @@
-/** TodoApp.js */
-
-// 1. 使用元件類別前，記得先從 window.App 中取出
 const {
     InputField,
     TodoHeader,
@@ -9,11 +6,14 @@ const {
 
 class TodoApp extends React.Component {
     render() {
-        // 2. 組合元件的觀念，與架構 HTML 元素是一樣的
         return (
             <div>
-                <TodoHeader />
-                <InputField />
+                <TodoHeader
+                    title="我的待辦清單"
+                    username="Jason"
+                    todoCount={99}
+                />
+                <InputField placeholder="新增待辦清單" />
                 <TodoList />
             </div>
         );

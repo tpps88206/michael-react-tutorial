@@ -5,13 +5,22 @@ class TodoList extends React.Component {
         return (
             <ul>
                 <li>
-                    <TodoItem />
+                    <TodoItem
+                        title="Item 1"
+                        completed={false}
+                    />
                 </li>
                 <li>
-                    <TodoItem />
+                    <TodoItem
+                        title="Item 2"
+                        completed={false}
+                    />
                 </li>
                 <li>
-                    <TodoItem />
+                    <TodoItem
+                        title="Item 3"
+                        completed={false}
+                    />
                 </li>
             </ul>
         );

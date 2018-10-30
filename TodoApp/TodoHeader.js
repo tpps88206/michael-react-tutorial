@@ -1,9 +1,14 @@
 class TodoHeader extends React.Component {
     render() {
+        const {
+            title,
+            username,
+            todoCount
+        } = this.props;
         return (
             <div>
-                <h1>我的待辦清單</h1>
-                <span>哈囉，Jason：你有 99 項未完成待辦事項</span>
+                <h1>{title}</h1>
+                <span>哈囉，{username}：你有 {todoCount} 項未完成待辦事項</span>
             </div>
         );
     }
