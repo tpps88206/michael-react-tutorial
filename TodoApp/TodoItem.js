@@ -14,4 +14,9 @@ class TodoItem extends React.Component {
     }
 }
 
+TodoItem.propTypes = {
+    title: React.PropTypes.string.isRequired,
+    completed: React.PropTypes.bool.isRequired
+};
+
 window.App.TodoItem = TodoItem;
