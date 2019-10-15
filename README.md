@@ -1,1 +1,0 @@
-課程資源：https://github.com/shiningjason/react-quick-tutorial
